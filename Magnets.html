@@ -16,8 +16,11 @@
             body{background-color:black}
             #header{background-color:rgb(255,94,0);color:white;padding-bottom:10px;text-align:center;padding-top:10px;}
             #text{color:white}
+            #titles{color:white;text-decoration:underline;}
+            #right{float:right; margin: 0 0 0 0;padding:0 0 0 0;}
+            #left{float:left;}
+            #figure{float:right; color:white;}
         </style>
-
     </head>
     <body>
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column center">
@@ -26,10 +29,24 @@
             </header><br>
             <div id="text">
                 The arrangement of the magnets inside a tokamak are its defining feature; in fact, the name 'tokamak' is an acronym of four Russian words that roughly translate to 'toroidal chamber with magnetic coils'. 
-                In practically all cases, a tokamak has 3 main sets of magnets: the toroidal field set, the poloidal field set and the central solenoid. Do note that there also exists multiple 'correction coils'
-                which compensate for minor errors in the magnetic field produced by the three sets mentioned above, however they are relatively small in comparison, and so we will neglect them in the discussion below.
-
+                In practically all cases, a tokamak requires 3 magnetic fields, each with their own function. These are the toroidal field, the poloidal field and multiple 'correction' fields which we'll denote as B<sub>&phi;</sub>, B<sub>&theta;</sub> and B<sub>cor</sub> respectively. 
+                It is most convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, the image on the right provides a simple visualisation.
+                The blue arrow denotes the toroidal direction and the red is the poloidal direction.
+                With that being said, in a tokamak the magnitude of the fields is such that B<sub>&phi;</sub> > B<sub>&theta;</sub> > B<sub>cor</sub> , so for this reason we'll begin the discussion with the toroidal field.
             </div>
+            <div id="text" ><figure id="figure"><a title="DaveBurke, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Toroidal_coord.png"><img id="right" width=200px height=200px alt="Toroidal coord" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Toroidal_coord.png/512px-Toroidal_coord.png"></a><figcaption></figcaption></figure>
+            <br><br><br><br><h2 id="titles" text-align="left" color="white" >Toroidal field</h2>
+            There perhaps may never exist a material that can confine plasmas at the temperatures required for nuclear fusion, so it was decided very early on that the most effective method of 'bottling up' a plasma would be 
+            through the use of magnetic fields. The toroidal field does this job in the tokamak, keeping the plasma away from the reactor walls (but requiring some assistance from the other fields to do this!) 
+            </div>
+            
+            
+            
+            <div><figure id="figure"><img src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" width="200px" height="200px">Figure 2<figcaption></figcaption></figure></div>
+            
+            
+
+
         </div>
 
     </body>
