@@ -10,8 +10,6 @@
 
     <title>Dismantling the Tokamak</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/cover/">
-
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"" rel="stylesheet">
 
@@ -21,6 +19,7 @@
         body{background-image: url(background4.jpg);background-size:cover;background-repeat:no-repeat; color:white}
         #intro{text-align: left;}  
         #links{text-align: center;}
+        #button{background-color: rgb(255,94,0);border-color:rgb(255,94,0);width:150px;height:50px;}
     </style>
   </head>
 
@@ -52,13 +51,18 @@
             <br><br>For this reason I have created a webpage to explore further the components of a tokamak, 
             the device that is heralded to first deliver fusion energy to our society. 
             I encourage you to browse the links on the right-hand side of this page, and immerse yourself in the workings
-            of the tokamak, often described as 'the greatest engineering challenge that man will face in the
+            of the tokamak, often described as 'one of the greatest engineering challenge that man will face in the
             21st century. As always, I am open  to any suggestions for improvements or other constructive criticism. Please contact me using the link in the navigation bar.</div>
   
 
           <div class =col-3></div>
           <div id="links" class =col-4>
-            <button type="button" class="btn btn-primary" onclick="parent.location='Divertor.html'">Divertor</button>
+            <button id="button" type="button" class="btn btn-primary" onclick="parent.location='Magnets.html'">Magnets</button><br><br>
+            <button id="button" type="button" class="btn btn-primary" onclick="parent.location='Divertor.html'">Divertor</button><br><br>
+            <button id="button" type="button" class="btn btn-primary" onclick="parent.location='Divertor.html'">Reactor Wall</button><br><br>
+            <button id="button" type="button" class="btn btn-primary" onclick="parent.location='Divertor.html'">Vacuum Vessel</button><br><br>
+            <button id="button" type="button" class="btn btn-primary" onclick="parent.location='Divertor.html'">Cryostat</button><br><br>
+
           </div>
 
         </div>
