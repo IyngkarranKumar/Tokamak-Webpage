@@ -16,10 +16,14 @@
             body{background-color:black}
             #header{background-color:rgb(255,94,0);color:white;padding-bottom:10px;text-align:center;padding-top:10px;}
             #text{color:white}
-            #titles{color:white;text-decoration:underline;}
+            #titles{color:white;text-decoration:underline; text-align:left;}
             #right{float:right; margin: 0 0 0 0;padding:0 0 0 0;}
             #left{float:left;}
-            #figure{float:right; color:white;}
+            figure {border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 220px;margin: auto;}
+            #bigfig{border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 500px;margin:auto;}
+            img{max-width: 220px;max-height: 150px;}
+            #bigimg{max-width: 400px; max-height:300px;}
+            figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
         </style>
     </head>
     <body>
@@ -30,19 +34,34 @@
             <div id="text">
                 The arrangement of the magnets inside a tokamak are its defining feature; in fact, the name 'tokamak' is an acronym of four Russian words that roughly translate to 'toroidal chamber with magnetic coils'. 
                 In practically all cases, a tokamak requires 3 magnetic fields, each with their own function. These are the toroidal field, the poloidal field and multiple 'correction' fields which we'll denote as B<sub>&phi;</sub>, B<sub>&theta;</sub> and B<sub>cor</sub> respectively. 
-                It is most convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, the image on the right provides a simple visualisation.
+                It is most convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, Figure 1 provides a simple visualisation.
                 The blue arrow denotes the toroidal direction and the red is the poloidal direction.
                 With that being said, in a tokamak the magnitude of the fields is such that B<sub>&phi;</sub> > B<sub>&theta;</sub> > B<sub>cor</sub> , so for this reason we'll begin the discussion with the toroidal field.
             </div>
-            <div id="text" ><figure id="figure"><a title="DaveBurke, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Toroidal_coord.png"><img id="right" width=200px height=200px alt="Toroidal coord" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Toroidal_coord.png/512px-Toroidal_coord.png"></a><figcaption></figcaption></figure>
+            <div id="text" ><figure>
+                <img id="right" width=200px height=200px alt="Toroidal coord" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Toroidal_coord.png/512px-Toroidal_coord.png"><figcaption>Figure 1</figcaption>
+            </figure>
             <br><br><br><br><h2 id="titles" text-align="left" color="white" >Toroidal field</h2>
-            There perhaps may never exist a material that can confine plasmas at the temperatures required for nuclear fusion, so it was decided very early on that the most effective method of 'bottling up' a plasma would be 
-            through the use of magnetic fields. The toroidal field does this job in the tokamak, keeping the plasma away from the reactor walls (but requiring some assistance from the other fields to do this!) 
+            There perhaps may never exist a material that can confine plasmas at the temperatures required for nuclear fusion, 
+            so it was decided very early on that the most effective method of 'bottling up' the particles in a plasma would be 
+            through the use of magnetic fields. The toroidal field does this job in the tokamak; the particles gyrate around the field lines 
+            which themselves have a circular path around the circumference of the machine, and with the assistance of the other fields the plasma 
+            does not move close to the reactor walls (most of the time!). As indicated by Figure 2 on the right, the toroidal field is induced by magnets parallel to 
+            planes of constant toroidal angle. Note that the shape of a toroidal field inducing coil is not a perfect circle as one might expect, but instead a 'D' shape. Due to the 
+            curved shape of the tokamak, the sides of the magnets facing the plasma are more densely packed together. If we were to consider just one toroidal field coil, we'd see that this leads
+            to higher internal magnetic pressure on this inward facing side. The 'Princeton D Coil' as it became known ensures a similar magnetic tension force on both inward and outward facing sides of 
+            a coil, reducing the effects of damaging strains on the magnets. <br>
+            However, as always with fusion, it is not quite this simple. Above I mentioned that the particles in the plasma gyrate about a magnetic field line, but this is not the full story. This motion occurs only under a constant magnetic field, say 
+            &#8711;<bf>B</bf>xB
+
+            <br><br>
+            <h2 id="titles" text-align="left" color="white" >Poloidal field</h2>
+            
+            
+            
+            <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
+
             </div>
-            
-            
-            
-            <div><figure id="figure"><img src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" width="200px" height="200px">Figure 2<figcaption></figcaption></figure></div>
             
             
 
