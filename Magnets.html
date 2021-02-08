@@ -51,15 +51,10 @@
             curved shape of the tokamak, the sides of the magnets facing the plasma are more densely packed together. If we were to consider just one toroidal field coil, we'd see that this leads
             to higher internal magnetic pressure on this inward facing side. This 'D' coil ensures a similar magnetic tension force on both inward and outward facing sides of 
             a coil, reducing the effects of damaging strains on the magnets. <br>
-            Brilliant, so now we've confined our plasma in a torus with a  'D' shaped cross section. Or so we thought. As you may have guessed, it is not quite this simple to hold a plasma
-            in equilibrium; here's where our next set of magnets come in. 
-            
-            
-        
-
-            <br><br>
+            Brilliant, so now we've confined our plasma in a torus with a  'D' shaped cross section. Or have we? As you may have guessed, it is not quite this simple to hold a plasma
+            in the equlibrium that is required for sustained power production. Let's delve into the reason why. <br>
             <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
-            <h2 id="titles" text-align="left" color="white" >Poloidal field</h2>
+
             It is quite evident as to why a circular arrangement of magnets was chosen to confine a plasma over <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">Magnetic Mirrors</a>; particle leakages in the latter were too numerous to obtain
             scientific breakeven (where the power released by the fusion reactions is equal to the heating power). Unfortunately, the circular configuration of toroidal field magnets comes with its own problems as we will now see.<br>
             Let's start by considering how a particle moves when subject to various fields. The field configurations of interest are:
@@ -71,7 +66,24 @@
             </ul>
             A particle in all four fields exhibits some type of gyration, but the final three each cause a unique drift on the guiding centre of the gyration. To best see this, I have plotted the motion below using MATLAB.
             <br><br>IMAGES IMAGES IMAGES IMAGES<br><br>
+            Why is this a problem? As depicted above, a spatially varying magnetic field and a curved B field induce a drift on the particle guiding centre. Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitue of the <b>B</b> field is proportional 
+            to the inverse of the radial distance from the tokamak centre. When combining the particle drifts that the toroidal field causes, we see that
+            electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the type of charge. Such
+            an event cannot be allowed to happen. For the continuous operation of a tokamak, we need the plasma in equilibrium, i.e the average force on the plasma over some time period is zero. Minimising the number
+            of particles hitting the reactor wall is also desirable, as it leads to less impurities entering the plasma (impurities cause rapid cooling hence insufficient temperatures for fusion reactions, we'll return to this later). So now we can finally introduce the 
+            poloidal magnetic field, which serves as a solution to this problem. 
+
             
+            
+        
+
+            <br><br>
+           
+            <h2 id="titles" text-align="left" color="white" >Poloidal field</h2>
+            The aim of the poloidal field is to prevent the radial <b>ExB</b> drift, and this is achieved by preventing the charge polarization.
+            To think about this, let's place a tokamak on a Cartesian coordinate grid, and consider a surface bounded by a circular field line of the toroidal field that lies parallel to the x-y plane. The z axis passes through
+            the hole of the torus.
+
 
 
 
