@@ -52,7 +52,7 @@
             to higher internal magnetic pressure on this inward facing side. This 'D' coil ensures a similar magnetic tension force on both inward and outward facing sides of 
             a coil, reducing the effects of damaging strains on the magnets. <br>
             Brilliant, so now we've confined our plasma in a torus with a  'D' shaped cross section. Or have we? As you may have guessed, it is not quite this simple to hold a plasma
-            in the equlibrium that is required for sustained power production. Let's delve into the reason why. <br>
+            in the equiibrium that is required for sustained power production. Let's delve into the reason why. <br>
             <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
 
             It is quite evident as to why a circular arrangement of magnets was chosen to confine a plasma over <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">Magnetic Mirrors</a>; particle leakages in the latter were too numerous to obtain
@@ -64,13 +64,13 @@
                 <li>Spatially varying <b>B</b> field</li>
                 <li>Curved <b>B</b> field</li>
             </ul>
-            A particle in all four fields exhibits some type of gyration, but the final three each cause a unique drift on the guiding centre of the gyration. To best see this, I have plotted the motion below using MATLAB.
+            A particle in all four fields exhibits some type of gyration about the field lines, but the final three each cause a unique drift on the guiding centre of the gyration. To best see this, I have plotted the motion below using MATLAB.
             <br><br>IMAGES IMAGES IMAGES IMAGES<br><br>
-            Why is this a problem? As depicted above, a spatially varying magnetic field and a curved B field induce a drift on the particle guiding centre. Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitue of the <b>B</b> field is proportional 
+            Why is this a problem? As depicted above, a spatially varying and/or curved <b>B</b> field induce a drift on the particle guiding centre. Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitude of the <b>B</b> field is proportional 
             to the inverse of the radial distance from the tokamak centre. When combining the particle drifts that the toroidal field causes, we see that
-            electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the type of charge. Such
+            electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the type of charge (Please refer to the figure 3 to see a diagrammatic depiction.). Such
             an event cannot be allowed to happen. For the continuous operation of a tokamak, we need the plasma in equilibrium, i.e the average force on the plasma over some time period is zero. Minimising the number
-            of particles hitting the reactor wall is also desirable, as it leads to less impurities entering the plasma (impurities cause rapid cooling hence insufficient temperatures for fusion reactions, we'll return to this later). So now we can finally introduce the 
+            of particles hitting the reactor wall is also desirable, as it leads to less impurities entering the plasma (impurities cause rapid cooling hence insufficient temperatures for fusion reactions, please see the <a href="Divertor.html">Divertor</a> page for a more in-depth discussion.) Now we can finally introduce the 
             poloidal magnetic field, which serves as a solution to this problem. 
             <figure id="bigfig"><img id="bigimg" width=400px height=300px alt="Drift Diagram" src="Drifts.png"><figcaption>Figure 3</figcaption></figure>
 
