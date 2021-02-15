@@ -22,7 +22,7 @@
             figure {border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 220px;margin: auto;}
             #bigfig{border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 500px;margin:auto;}
             img{max-width: 220px;max-height: 150px;}
-            #bigimg{max-width: 400px; max-height:300px;}
+            #bigimg{max-width:500px; max-height:500px;}
             figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
         </style>
     </head>
@@ -32,12 +32,12 @@
                 <h1 class="masthead-brand">Divertor</h1>
             </header><br>
             <div id="text">
-                <figure id="bigfig"><img id="bigimg" src="Divertor.jpg"></a><figcaption>The divertor of the ITER machine, comprising of 54 individual segments</figcaption></figure>
+                <figure id="bigfig"><img id="bigimg" src="Divertor.jpg"></a><figcaption>Figure 1: The divertor of the ITER machine, comprising of 54 individual segments</figcaption></figure>
                 Here's an empowering thought. Whilst it may only be for a few seconds, the inside of a tokamak often reaches temperatures of 150 million degrees, making it one of the hottest places in the 
                 observable universe during operation. Holding the plasma in this condition however is no simple task, and there exists various processes which lead to significant 
                 cooling of the plasma. One of the key obstacles that has to be overcome to achieve large scale commercialisation of fusion power is to limit the effects of such processes to as great an extent as possible, thereby retaining a maximally hot and efficient plasma.
                 To start, we'll look at examples of the aforementioned cooling processes and will then delve into the geometry of the magnetic field in a tokamak. This will then be brought together to introduce the 
-                divertor and limiter, two remarkable engineering solutions that aim to retain the high temperature of the fusing plasma confined by the tokamak. 
+                divertor and limiter, two engineering solutions that aim to retain the high temperature of the fusing plasma confined by the tokamak. 
                 
                 <br><br><h2 id="titles">Impurities</h2>
                 As implied above, the particles in a tokamak reach tremendous speeds while confined, of the order 10<sup>6</sup> ms<sup>-1</sup>. The possession of such energy
@@ -53,7 +53,8 @@
                 <br><br>BREMSSTRAHLUNG AS A FUNCTION OF Z NUMBER? Pg 230 book.
 
                 <br><br><h2 id="titles">Flux Surfaces</h2>
-                The Magnets page of this site provides a description of the various magnetic fields employed to bound a plasma inside the tokamak, however
+                <figure id="bigfig"><img id="bigimg" src="Fluxsurfaces.pg.png"></a height=500px width=500px><figcaption>Figure 2: A cross section of a D-shaped plasma. Created with <a href="https://app.biorender.com/">Bio Render</a></figcaption></figure>
+                The <a href="Magnets.html">Magnets </a> page of this website provides a description of the various roles served by the magnetic fields to bound a plasma inside the tokamak, however
                 if chosen carefully, the fields can also assist in the mitigation of impurity effects. Using the magnetohydrodynamic (MHD) model which
                 provides both an accurate and tractable description of electrically conducting fluids, it can be seen that
                 there exist two distinct classes of field lines in the plasma confined by a tokamak, closed and open field lines. 
@@ -63,10 +64,22 @@
                 <br>The reason this is important is because the particles exhibit cooperative behaviour when subject to such a field. In particular, the guiding centre of
                 the gyration of a particle remains ON a flux surface, with little tendency to move radially outward/inward to another such surface (except due to collisions).Therefore, 
                 if a particle finds itself on an open flux surface (which impurities often do as they are sputtered from the wall), it will most likely remain there until 
-                the surface intersects with the reactor wall. The points where open flux surfaces intersect with the wall can be specially designed to remove impurities and this finally brings
+                the surface intersects with the reactor wall. The points where open flux surfaces intersect with the wall can be specially designed to remove impurities; this finally brings
                 us onto the divertor and limiter.
 
-                
+                <br><br><h2 id="titles">Divertor and Limiter</h2>
+                As it was the preferred aproach in the early fusion reactors seen in 1970's, we'll begin with the limiter. Take note of the name, 
+                the limiter is designed to 'limit' the impurities in a plasma and does not remove them, unlike a divertor, hence the reason for 
+                the popularity of the divertor in most machines today. The limiter is a structure positioned such that it intersects with the open flux surfaces (collectively known as the Scrape-off Layer, or SOL)
+                prior to the flux surfaces coming into contact with the reactor walls. This still leads to sputtering and impurities,
+                but the source of the sputtered atoms is now the limiter instead of the reactor walls; if the limiter is chosen to be made from a 
+                material of low Z number (which the reactor wall cannot afford the privilege of having), we see that the bremsstrahlung and line emission losses 
+                are decreased. Conventional limiters are manufactured from graphite (an allotrope of carbon), whilst reactor walls are constructed with stainless steel (an iron-based
+                alloy with 10% chromium.) Comparing these substances, we see that the average Z number of the graphite will be 6, compared to roughly 26 for stainless steel; this should hopefully 
+                make clear the motivation behind the use of a limiter.<br>
+                However we can, and must, do better. The limiter still leads to the addition of impurities into the plasma, just from 
+                less damaging sources and whilst limiters still line the walls of many tokamaks, the divertor reigns supreme
+                when it comes to mitigating impurity effects.
                 
                 
                 
