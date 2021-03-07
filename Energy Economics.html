@@ -32,10 +32,10 @@
                 <h1 class="masthead-brand">Energy Economics</h1></header>
                 <div id="text">
                     <br>
-                    <figure id="bigfig"><img id="bigimg" src="Tokyo.jpg" width="600px"></a><figcaption>Figure 1: Tokyo, the most populous city in the world, with roughly 37 million inhabitants. This translates to about 2100 GWh of electricity consumption. Image source: Kakidai, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
+                    <figure id="bigfig"><img id="bigimg" src="Tokyo.jpg" width="600px"></a><figcaption>Figure 1: Tokyo, one of the most populous cities in the world, with roughly 30 million inhabitants. This translates to about 2100 GWh of electricity consumption. Image source: Kakidai, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
 
-                    Once a fusion reactor is developed that consistently achieves breakeven, one of the next steps is to integrate it into the electric grid. This is not as simple as hooking it up to some pylons 
-                    and pressing the ON button; multiple other factors now come into play, one being the cost of the electricity that our reactor produces.
+                    Once a fusion reactor is developed that consistently achieves breakeven, one of the next steps is to integrate it into the electric grid. This is not as simple as hooking it up to a few pylons 
+                    and pressing the ON button as multiple other factors now come into play, one being the cost of the electricity that our reactor produces.
                     Of course, if the advent of fusion reactors does not provide atleast a small financial incentive to utility companies, it is 
                     unlikely that they will be be implemented on the scale that some of us envision. For this reason, the following text will 
                     be devoted to analysing the cost of producing electrical power, as well as where fusion will fit into the mix, now and in 
@@ -50,12 +50,38 @@
                     Let's get into it.</div>
                 <br><br>
                 <h2 id="titles">Calculating Costs</h2><div id="text">
-                We'll focus on quantifying the cost of just electricity here and not energy use in total. Although electricity is the prominent way of 
-                powering our societies, there are a few things we use on a day-to-day basis that function by harnessing alternate energy stores,
+                We'll focus on quantifying the cost of just electricity here and not energy use in total. Although electricity is the main way of 
+                powering our societies, there are many things we use on a day-to-day basis that function by harnessing alternate energy stores,
                 such as the vast majority of automobiles (which rely on petrol/diesel), as well as the systems running on natural gas that heat our 
-                homes. But even these are changing as we transition to a carbon-free planet. In particular, the relationship between electric and 
-                hydrogen energy stores looks very promising indeed.<br>
-                Mathematically, this is written:</div> <br>
+                homes. But even these are changing as we transition to a carbon-free planet (hydrogen appears to be the fuel of the future, but that's a whole other story). <br>
+                <br>
+                The conventional metric used for such a task is the Levelized Cost of Energy (LCOE). If we consider the
+                total lifetime costs of a power source, the LCOE is the cost at which each unit of energy 
+                produced over the lifetime of this source must be sold at in order for the investment to break-even.
+                <br>Mathematically, this is expressed as:<br>
+                The numerator of this fraction is, as expected, the total lifetime costs of our plant, with I<sub>t</sub> representing 
+                the loan repayments (with interest), M<sub>t</sub> denoting the operation and maintenance costs 
+                and F<sub>t</sub> the fuel costs, all in year t.  The denominator is simply the total energy produced
+                over n years of operation. The LCOE is often estimated many years before the end of operation of 
+                a power plant, so it is required to make predictions for costs and revenues decades into the future. For 
+                this reason, a discount rate r is included in the equation, which aims to account for the 
+                inflationary nature of money over time (as well as other factors, such as the perceived risk of the 
+                investment). <figure id="bigfig"><img id="bigimg" src="CapFactor.png" width="600px"></a><figcaption>Figure 2: The capacity factors for various sources. Photovoltaics are not depicted however they range from 20%-30% in most places. Image source: Garzfoth, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
+                <br>But this is not the full story.To further understand the costs of producing electricity, we need to also consider what is known as 
+                the capacity factor (C). This is defined as the ratio between the actual electricity output of a 
+                source and the maximum possible electricity output over some unit of time.  So for example, if 
+                an array of solar panels produced n KWh of electrical energy over say, a week, but it has the
+                potential to produce p`n KWh per week, then its capacity factor is p<sup>-1</sup>. To see why 
+                such a quantity influences electricity costs, consider the position of a utility company that 
+                is operating a power plant with a 50% capacity factor. From the LCOE, we have seen that the
+                cost of electricity is given by the total cost divided by total energy output,  so by only
+                operating at 50% capacity the plant effectively doubles its cost (by producing only half
+                of the energy that is has the ability to). In countries such as the UK, this is seen mainly as 
+                a problem for intermittent power supplies due to erratic behaviour of the weather on which they
+                are so highly dependent. A crude quantification of this shows us that plant operating
+                with a capacity factor of &Kappa;  will see an increase in costs of a
+                factor &Kappa;<sup>-1</sup>.
+                
                
 
 
