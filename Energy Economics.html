@@ -24,7 +24,7 @@
             img{max-width: 300px;max-height: 200px;}
             #bigimg{max-width: 400px; max-height:300px;}
             figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
-
+            table,th,td{border: 2px solid white}
         </style>
         <link href="CSSmain.css" rel="stylesheet" type="text/css">
     </head>
@@ -74,10 +74,10 @@
                 is operating a power plant with a 50% capacity factor. From the LCOE, we have seen that the
                 cost of electricity is given by the total cost divided by total energy output,  so by only
                 operating at 50% capacity the plant effectively doubles its cost (by producing only half
-                of the energy that is has the ability to). In countries such as the UK, this is seen mainly as 
+                of the energy that the capital investment endowed it to). In countries such as the UK, this is seen mainly as 
                 a problem for intermittent power supplies due to erratic behaviour of the weather on which they
                 are so highly dependent. A very rough but simple quantification of this shows us that plant operating
-                with a capacity factor of &Kappa;  will see an increase in costs of a
+                with a capacity factor of &Kappa;  will see an increase in the LCOE of a
                 factor &Kappa;<sup>-1</sup>.<br><br>
 
                 <h2 id="titles">Tokamak Economics</h2><div id="text"><br>
@@ -91,11 +91,11 @@
                 known that 1kg of fusion fuel (which partly comprises of the abundant hydrogen isotope deuterium, 
                 found in any water source on the planet) has the potential to release the equivalent thermal energy 
                 of millions of kilograms of coal; such elegance and efficiency in the process of electricity 
-                generation are one of the many factors that attracted me, and many others I'm sure, to the fusion 
+                generation is one of the reasons that attracted me, and many others I'm sure, to the fusion 
                 industry. Tritium is the other participant in the fusion reaction being targeted here on Earth, so
                 if a self-sustaining tritium breeding blanket is engineered (this is discussed on the blankets page) 
-                then the fuel costs are negligible.<br> 
-                The operation and maintenance costs (denoted by Msub>t</sub>) should not be too difficult to 
+                then the fuel costs are almost negligible.<br> 
+                The operation and maintenance costs (denoted by M<sub>t</sub>) should not be too difficult to 
                 estimate due to the similarities with the baseload power stations today. Even though the 
                 fusion reactor is an amalgamation of some of the very greatest feats of engineering seen in
                 history, its primary purpose remains to turn water into steam, like all other thermal power
@@ -106,13 +106,15 @@
                 radioactive waste products, the high energy 14.1 MeV neutron produced in D-T (deuterium
                 -tritium) reactions can lead to neutron activation<sup>footnote</sup> of surrounding 
                 materials, which causes parts of the reactor to become radioactive and reduces its 
-                structural integrity. Note that the activated materials have a radioactive half-life many
+                structural integrity. The plasma facing walls of a tokamak may be required to be replaced
+                quite often due to this high neutron flux (every 6-7 years<sup><a href="Citations.html">3</a></sup>), which will contribute to a large
+                chunk of maintenance costs. Note that the activated materials have a radioactive half-life many
                 orders of magnitude less than that of fission products, so fusion power stations will
                 still incur costs of dealing with radioactive materials, but to a much lesser extent. 
                 The study of materials that are both suitable to use inside a reactor and which are not
                 greatly activated by high neutron fluxes is a topic of very high interest at the moment.<br>
 
-                Capital costs:
+                
                 The final component of the numerator of the LCOE is one that accounts for the initial and
                 loan repayment costs of a power plant. This is perhaps the hardest cost to predict as many 
                 of the components required by a fusion reactor are unique and have been developed solely for
@@ -124,7 +126,61 @@
                 that the construction of a nuclear power plant is infamous for.<br>
                 The following figures are taken from a 2018 paper that conducts an ex-ante analysis of the
                 economics of the proposed DEMO fusion power plant ("Approximation of the economy of fusion
-                energy"- S.Entler, J.Horacek, T.Dlouhy, V.Dostal)<sup><a href="Citations.html">3<a/></sup>
+                energy"- S.Entler, J.Horacek, T.Dlouhy, V.Dostal)<sup><a href="Citations.html">3</a></sup>.
+
+                <br>The breakdown of the main costs of a tokamak based fusion power plant are summarised in the table below (M$ denotes millions of dollars):<br><br>
+                <table style="width:100%">
+	                <tr>
+		                <th>Component</th>
+		                <th>Function</th>
+		                <th>Cost (M$)</th>
+	                </tr>
+                    <tr>
+		                <td>Magnets (superconducting)</td>
+		                <td>These generate the complex magnetic field required to contain the plasma. See <a href="Magnets.html">Magnets</a> for more</td>
+                        <td>2216</td>
+	                </tr>
+                    <tr>
+		                <td>Reactor Systems</td>
+		                <td>The turbines, generators and heat exchange/cooling systems that convert the thermal energy from the fusion reaction into electrical energy.</td>
+                        <td>1000</td>
+	                </tr>
+	                <tr>
+		                <td>Vacuum System</td>
+		                <td>As indicated by the name, these maintain the vacuum-like conditions inside the tokamak to enable nuclear fusion</td>
+                        <td>39</td>
+	                </tr>
+                    <tr>
+		                <td>Cryogenic System</td>
+		                <td>Responsible for keeping the superconducting magnets at or below their critical temperature</td>
+                        <td>99</td>
+	                </tr>
+                    <tr>
+		                <td>Fuel Handling</td>
+		                <td>Prepares deuterium and tritium prior to insertion into reactor chamber.</td>
+                        <td>298</td>
+	                </tr>
+                    <tr>
+		                <td>Heating and Current Drive</td>
+		                <td>Provides initial heating to achieve plasma temperature sufficient for self sustaining nuclear fusion.</td>
+                        <td>439</td>
+	                </tr>
+                    <tr>
+		                <td>Heating and Current Drive</td>
+		                <td>Provides initial heating to achieve plasma temperature sufficient for self sustaining nuclear fusion.</td>
+                        <td>439</td>
+	                </tr>
+                    <tr>
+		                <td>Control and Diagnostics</td>
+		                <td>Responsible for monitoring ongoing nuclear fusion reaction</td>
+                        <td>150</td>
+	                </tr>
+                    <tr>
+		                <td>Buildings</td>
+		                <td>Houses nuclear fusion reactor and other reactor systems</td>
+                        <td>1000</td>
+	                </tr>
+                </table>
                     
                 </div>
 
