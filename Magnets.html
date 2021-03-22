@@ -34,31 +34,36 @@
             <div id="text">
                 The arrangement of the magnets inside a tokamak are its defining feature; in fact, the name 'tokamak' itself is an acronym of four Russian words that roughly translate to 'toroidal chamber with magnetic coils'. 
                 In practically all cases, a tokamak requires 3 magnetic fields, each with their own function. These are the toroidal field, the poloidal field and multiple 'correction' fields  which we'll denote as B<sub>&phi;</sub>, B<sub>&theta;</sub> and B<sub>cor</sub> respectively. 
-                It is most convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, Figure 1 provides a simple visualisation.
+                It is convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, Figure 1 provides a simple visualisation.
                 The blue arrow denotes the toroidal direction and the red is the poloidal direction.
                 With that being said, in a tokamak the magnitude of the fields is such that B<sub>&phi;</sub> > B<sub>&theta;</sub> > B<sub>cor</sub> , so for this reason we'll begin the discussion with the toroidal field.
             </div>
             <div id="text" ><figure>
                 <img id="right" width=200px height=200px alt="Toroidal coordinates" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Toroidal_coord.png/512px-Toroidal_coord.png"><figcaption>Figure 1</figcaption>
             </figure>
-            <br><br><br><br><h2 id="titles" >Toroidal field</h2>
-            There perhaps may never exist a material that can confine plasmas at the temperatures required for nuclear fusion, 
-            so it was decided very early on in fusion efforts that the most effective method of 'bottling up' the particles in a plasma would be 
-            through the use of magnetic fields. The toroidal field does this job in the tokamak; the particles gyrate around the field lines 
-            which themselves have a circular path around the circumference of the machine, and with the assistance of the other fields the plasma 
-            does not expand towards the reactor walls (most of the time!). As indicated by Figure 2 on the right, the toroidal field is induced by magnets parallel to 
-            planes of constant toroidal angle. Note that the shape of a toroidal field inducing coil is not a perfect circle as one might expect, but instead a 'D' shape. Due to the 
-            curved shape of the tokamak, the sides of the magnets facing the plasma are more densely packed together. If we were to consider just one toroidal field coil, we'd see that this leads
-            to higher internal magnetic pressure on this inward facing side. This 'D' coil ensures a similar magnetic tension force on both inward and outward facing sides of 
-            a coil, reducing the effects of damaging strains on the magnets. <br>
-            Brilliant, so now we've confined our plasma in a torus with a  'D' shaped cross section. Or have we? As you may have guessed, it is not quite this simple to hold a plasma
-            in the equiibrium that is required for sustained power production. Let's delve into the reason why. <br>
-            <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
+            <br><br><h2 id="titles" >Toroidal field</h2>
+            It was realised very early on in fusion efforts that the only viable way of confining a  100 million-degree plasma for a 
+            sustained period of time would be through the use of magnetic fields, and it is the toroidal field that is mainly 
+            responsible for this. Figure 2 depicts a toroidal field line in blue that circles around the circumference of the tokamak 
+            and is produced by passing a current through large superconducting D-shaped coils  (20 metres in diameter in ITERs case!) 
+            which are situated parallel to planes of constant toroidal angle. Particles of the plasma gyrate around these field lines 
+            (this motion is shown in Figures 3-6) and in an ideal world would maintain this motion for a sufficiently long
+            time such that enough fusion reactions can occur to produce a net energy gain. <br>
+            One may also ask why toroidal field 
+            coils must be D-shaped, as after all a similar configuration of circular coils should produce the same field. The reason 
+            for this is due to the curvature of the tokamak, which means coils become more tightly packed together on the side facing 
+            the plasma leading to a higher magnetic field energy density (magnetic pressure) in this region; the D-shape allows for 
+            the parts of the magnet in this higher field area to bear the additional stresses that come from being in such a position.<br>
 
-            It is quite evident as to why a circular arrangement of magnets was chosen to confine a plasma over <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">Magnetic Mirrors</a>; particle leakages in the latter were too numerous to obtain
-            scientific breakeven (where the power released by the fusion reactions is equal to the heating power). Unfortunately, the circular configuration of toroidal field magnets comes with its own problems that require the use of other magnetic fields to correct.<br>
-            Let's start by considering how a particle moves when subject to various fields. The field configurations of interest are:
-            <ul>
+                <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
+            <br>
+            However we find that the toroidal field itself is not able to confine the plasma by itself, and the reasons for this once 
+            again come down to the curved nature of the magnet configuration. Firstly, it is important to note that a linear 
+            <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">'Magnetic Mirror'</a> method of confining a plasma is simply unable to accomplish such a thing, due to the high particle leakage 
+            out of both ends. The circular set up solves this (the particles cannot leak out anywhere), but in doing so leads to 
+            unfavourable particle motion that requires additional magnetic fields to negate, as discussed now. We begin by considering the motion
+            of a single charged particle subjected to the following fields:<br>
+            <br><ul>
                 <li>Homogenous <b>B</b> field</li>
                 <li>Combined homogenous <b>B</b> and <b>E</b> field</li>
                 <li>Spatially varying <b>B</b> field</li>
@@ -71,8 +76,8 @@
             IMAGES
             IMAGES
             <br><br>
-            Why is this a problem? As depicted above, a spatially varying and/or curved <b>B</b> field induce a drift on the particle guiding centre. Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitude of the <b>B</b> field is proportional 
-            to the inverse of the radial distance from the tokamak centre. When combining the particle drifts that the toroidal field causes, we see that
+            Why is this a problem? As depicted above, a spatially varying and/or curved <b>B</b> field induce a drift on the particle guiding centre (this guiding centre is the point about which the particle gyrates, shown approximately by the green line). Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitude of the <b>B</b> field is proportional 
+            to the inverse of the radial distance from the tokamak centre (thereby introducing the 'grad B' drift'). When combining the particle drifts that the toroidal field causes, we see that
             electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the type of charge (Please refer to the figure 3 to see a diagrammatic depiction.). Such
             an event cannot be allowed to happen. For the continuous operation of a tokamak, we need the plasma in equilibrium, i.e the average force on the plasma over some time period is zero. Minimising the number
             of particles hitting the reactor wall is also desirable, as it leads to less impurities entering the plasma (impurities cause rapid cooling hence insufficient temperatures for fusion reactions, please see the <a href="Divertor.html">Divertor</a> page for a more in-depth discussion.) Now we can finally introduce the 
