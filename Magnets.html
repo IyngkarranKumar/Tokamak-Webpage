@@ -35,9 +35,9 @@
             </header><br>
             <div id="text">
                 The arrangement of the magnets inside a tokamak are its defining feature; in fact, the name 'tokamak' itself is an acronym of four Russian words that roughly translate to 'toroidal chamber with magnetic coils'. 
-                In practically all cases, a tokamak requires 3 magnetic fields, each with their own function. These are the toroidal field, the poloidal field and multiple 'correction' fields  which we'll denote as B<sub>&phi;</sub>, B<sub>&theta;</sub> and B<sub>cor</sub> respectively. 
+                In practically all cases, a tokamak requires 3 magnetic fields, each with their own function. These are the toroidal field, the poloidal field and multiple 'correction' fields  which we may denote as B<sub>&phi;</sub>, B<sub>&theta;</sub> and B<sub>cor</sub> when required.
                 It is convenient to describe the geometry of a tokamak with regards to radial, poloidal and toroidal coordinates as I have above, so for those unfamiliar with the system, Figure 1 provides a simple visualisation.
-                The blue arrow denotes the toroidal direction and the red is the poloidal direction.
+                The blue arrow denotes the toroidal direction and the red is the poloidal direction (and the radial distance has a similar definition as in other coordinate systems.).
                 With that being said, in a tokamak the magnitude of the fields is such that B<sub>&phi;</sub> > B<sub>&theta;</sub> > B<sub>cor</sub> , so for this reason we'll begin the discussion with the toroidal field.
             </div>
             <div id="text" ><figure>
@@ -48,20 +48,20 @@
             sustained period of time would be through the use of magnetic fields, and it is the toroidal field that is mainly 
             responsible for this. Figure 2 depicts a toroidal field line in blue that circles around the circumference of the tokamak 
             and is produced by passing a current through large superconducting D-shaped coils  (20 metres in diameter in ITERs case!) 
-            which are situated parallel to planes of constant toroidal angle. Particles of the plasma gyrate around these field lines 
+            which are situated parallel to planes of constant toroidal angle. Plasma particles gyrate about these field lines 
             (this motion is shown in Figures 3-6) and in an ideal world would maintain this motion for a sufficiently long
             time such that enough fusion reactions can occur to produce a net energy gain. <br>
             One may also ask why toroidal field 
             coils must be D-shaped, as after all a similar configuration of circular coils should produce the same field. The reason 
-            for this is due to the curvature of the tokamak, which means coils become more tightly packed together on the side facing 
-            the plasma leading to a higher magnetic field energy density (magnetic pressure) in this region; the D-shape allows for 
+            for this is due to the curvature of the tokamak, which means coils become more tightly packed on the inner side
+            of the machine leading to a higher magnetic field energy density (magnetic pressure) in this region; the D-shape allows for 
             the parts of the magnet in this higher field area to bear the additional stresses that come from being in such a position.<br>
 
                 <div><figure id="bigfig"><img id="bigimg" src="tokamakmagnets.jpg" alt="The magnets in a tokamak" id="right" ><figcaption>Figure 2</figcaption></figure></div>
             <br>
             Now, as hinted at above, we find that the toroidal field itself is not able to confine the plasma by itself, and the reasons for this once 
             again comes down to the curved nature of the magnet configuration. Firstly, it is important to note that a linear 
-            <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">'Magnetic Mirror'</a> method of confining a plasma is simply unable to accomplish such a thing, due to the high particle leakage 
+            <a href="https://en.wikipedia.org/wiki/Magnetic_mirror#:~:text=A%20magnetic%20mirror%2C%20known%20as,temperature%20plasma%20using%20magnetic%20fields.">'Magnetic Mirror'</a> method of confining a plasma is simply unable to accomplish such a task, due to the high particle leakage 
             out of both ends. The circular set up solves this (the particles cannot leak out anywhere), but in doing so leads to 
             unfavourable particle motion that requires additional magnetic fields to negate, as discussed now. We begin by considering the motion
             of a single charged particle subjected to the following fields:<br>
@@ -71,10 +71,11 @@
                 <li>Spatially varying <b>B</b> field</li>
                 <li>Curved <b>B</b> field</li>
             </ul>
-            A particle in all four fields exhibits some type of gyration about the field lines, but the final three each cause a unique drift on the guiding centre of the gyration. To best see this, I have plotted the motion below using MATLAB.
+            A particle in all four fields exhibits some type of gyration about the field lines, but the final three each cause a unique drift on the guiding centre of the gyration. To best see this, I have plotted the motion of a positive charge below, using MATLAB:
+            (Ignore the scales of the axis, the plots are solely meant to show the motion of a particle)
             <br><br>
             <figure id="customfig1" style=" float:left" ><img  id="customimg1" src="HMGB.png" ><figcaption>Figure 3: No drift of particle guiding centre.</figcaption></figure>&nbsp;&nbsp;
-            <figure id="customfig1" style=" float:left" ><img  id="customimg1" src="HMGB&E.png" ><figcaption>Figure 4: Drift in direction:<b>ExB</b> and <br>colloquially known as 'E cross B' drift.</figcaption></figure>
+            <figure id="customfig1" style=" float:left" ><img  id="customimg1" src="HMGB&E.png" ><figcaption>Figure 4: Drift in direction:<b>ExB</b> which is<br>colloquially known as 'E cross B' drift.</figcaption></figure>
             
             
             
@@ -82,18 +83,44 @@
             
             Why is this a problem? As depicted above, a spatially varying and/or curved <b>B</b> field induces a drift on the particle guiding centre (shown approximately by the green line). Now consider the toroidal field we discussed; clearly the field lines are curved and as the magnets are more tightly packed on the inner side of the tokamak, the magnitude of the <b>B</b> field is proportional 
             to the inverse of the radial distance from the tokamak centre (thereby introducing the 'grad B' drift). When combining the particle drifts that the toroidal field causes, we see that
-            electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the sign of the charge (Please refer to the figure 3 to see a diagrammatic depiction.). Such
+            electrons drift vertically downwards and ions are forced upwards. This separation of charged particles (polarization) then induces an <b>E</b> field, leading to an <b>ExB</b> drift that is directed radially outwards, irrespective of the sign of the charge (Please refer to the figure 7 to see a diagrammatic depiction.). Such
             an event cannot be allowed to happen. When particles collide with the reactor wall, impurities enter the plasma leading to rapid cooling as well as a host of other problems (see the <a href="Divertor.html">Divertor</a> page for a more in-depth discussion) and continuous operation of the tokamak will not be
-            unfeasible. We can now finally introduce the poloidal field which serves as a correction mechanism to this issue.  
+            feasible. So now we can introduce the poloidal field, which serves as a way to negate these drifts.   
             <figure id="bigfig"><img id="bigimg" width=400px height=300px alt="Drift Diagram" src="Drifts.png"><figcaption>Figure 7</figcaption></figure>
 
             <br><br>
            
             <h2 id="titles" text-align="left" color="white" >Poloidal field</h2>
-            The aim of the poloidal field is to prevent the radial <b>ExB</b> drift, and this is achieved by preventing the charge polarization.
-            To see how, consider the cross section of the tokamak such as Figure 7 on the right. Now, let's run a current through the plasma in the toroidal direction; the effect of this is the generation of a poloidal field around the tokamak loop, depicted by B(pol) on Fig 7. If we were now to consider
-            a particle in motion, we can see that if it has some non-zero velocity in the toroidal direction the poloidal field induces a restoring radial force back towards the centre of the machine. Hence, any particle drifting toward the reactor wall feels a restoring force, preventing charge separation, polarisation and hence the 
-            problematic E cross B drift.
+            The aim of the poloidal field is to prevent the radial <b>ExB</b> drift, and two sets of magnets are employed for the task; the inner solenoid and the outer poloidal field coils (please see Figure 2).
+            By fairly elementary transformer action, a current can be induced inside the tokamak travelling in the toroidal direction (think of the tokamak as a solitary secondary coil in a transformer) which then gives
+            rise to a poloidal field around the tokamak loop, depicted in Figure 2 by the green arrows that wrap around the tokamak loop. If we were now to consider
+            a charged particle in motion, we can see that if it has some non-zero velocity in the toroidal direction the poloidal field leads to a radial force back towards the centre of the machine. For particles travelling steadily 
+            along the centre (i.e a = 0), the radial forces cancel but any slight deviation from this point should induce a restoring force, preventing radial expansion.
+            <br>Again, the curved nature of the tokamak magnet configuration causes a slight issue here. The poloidal field lines are more densely packed on the inner side of the tokamak which leads to yet another drift radially outwards.
+            This is corrected by the outer poloidal field magnets, which create a vertical magnetic field to counterract this.
+            
+            <br><br><h5 id="titles" text-align="left" color="white" >A note on the Correction Fields</h5>
+            The final set of magnets are the correction coils which account for just a small fraction of the total field energy that the magnet system of a tokamak stores.
+            The reason for their existence comes about due to the inevitable errors that will arise during manufacturing and assembly of the toroidal and poloidal field magnets,
+            producing asymmetric 'error fields' that prevent the plasma from reaching the equilibrium state that is required for a sustained period
+            of confinement. Alhtough not depicted in Figure 2, I recommend having a look at ITER's <a href="https://www.iter.org/mach/Magnets" target="_blank">Magnets</a> page, which provides 
+            a visualisation of all 3 magnetic coil configurations (as well as depicting the sheer size of the machine!)
+
+
+
+            <br><br><h5 id="titles" text-align="left" color="white" >What's Next?</h5>
+            This is by no means all I plan to write on this page. In the coming weeks I aim to add sections on the following topics:<br><br>
+            <ulist>
+                <li>The Beta Parameter</li>
+                <li>Particle Trapping and 'Banana' orbits</li>
+                <li>Plasma Stability and MHD modes</li>
+                <li>And much more...</li>
+            </ulist>
+
+
+
+            
+             
 
 
 
