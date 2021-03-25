@@ -22,7 +22,7 @@
             figure {border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 220px;margin: auto;}
             #bigfig{border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 500px;margin:auto;}
             img{max-width: 300px;max-height: 200px;}
-            #bigimg{max-width: 400px; max-height:300px;}
+            #bigimg{max-width: 600px; max-height:300px;}
             figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
             table,th,td{border: 2px solid white}
         </style>
@@ -34,7 +34,7 @@
                 <h1 class="masthead-brand">Energy Economics</h1></header>
                 <div id="text">
                     <br>
-                    <figure id="bigfig"><img id="bigimg" src="Tokyo.jpg" width="600px"></a><figcaption>Figure 1: Tokyo, Japan. One of the most populous cities in the world, with roughly 30 million inhabitants. This translates to about 2100 GWh of electricity consumption. Image source: Kakidai, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
+                    <figure id="bigfig"><img id="bigimg" src="Tokyo.jpg" width="100%"></a><figcaption>Figure 1: Tokyo, Japan. One of the most populous cities in the world, with roughly 30 million inhabitants. This translates to about 2100 GWh of electricity consumption. Image source: Kakidai, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
 
                     Once a functioning fusion reactor is developed, one of the next stages is widespread integration onto the electric grid. This is not as simple as hooking it up to a few pylons 
                     and pressing the ON button as multiple other factors now come into play, one being the cost of the electricity that the reactor produces.
@@ -49,21 +49,21 @@
                     looked at; we'll see which components make up the largest proportion of this cost, and what is being/could be done to 
                     tackle this. Comparisons will be drawn with other methods of electricity generation, especially nuclear fission due to the many similarities that a fusion and fission power plant will have. 
                     Let's get into it.</div>
-                <br>
+                
                 <h2 id="titles">Calculating Costs</h2><div id="text">
                 How does one go about putting a price on electricity? 
                 The conventional metric used for such a task is the Levelized Cost of Energy (LCOE). If we consider the
                 total lifetime costs of a power source, the LCOE is the cost at which each unit of energy 
-                produced over the lifetime of this source must be sold at in order for the investment to break-even.
-                <br>Mathematically, this is expressed as:<br>
+                produced over the lifetime of this source must be sold at in order for the investment to break-even. This is expressed mathematically in Figure 2.
+             <figure id="bigfig"><img id="bigimg" src="LCOE.png" width="300px"></a><figcaption>Figure 2: LCOE equation</figcaption></figure>
                 The numerator of this fraction is, as expected, the total lifetime costs of our plant, with I<sub>t</sub> representing 
                 the loan repayments (with interest) per year, M<sub>t</sub> denoting the operation and maintenance costs 
                 and F<sub>t</sub> the fuel costs, all in year t. An I<sub>0</sub> term is also included to account for the initial investment costs.  The denominator is simply the total energy produced
                 over n years of operation. The LCOE is often estimated many years before the end of operation of 
                 a power plant, so it is required to make predictions for costs and revenues decades into the future. For 
-                this reason, a discount rate r is included in the equation, which aims to account for the 
+                this reason, a discount rate (1+r)<sup>t</sup> is included in the equation, which aims to account for the 
                 inflationary nature of money over time (as well as other factors, such as the perceived risk of the 
-                investment). <figure id="bigfig"><img id="bigimg" src="CapFactor.png" width="600px"></a><figcaption>Figure 2: The capacity factors for various sources. Photovoltaics are not depicted however they range from 20%-30% in most places. Image source: Garzfoth, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
+                investment). In short, a discount rate allows one to consider cashflows in future years in terms of the value of money at the present moment.
                 <br>But this is not the full story.To further understand the costs of producing electricity, we need to also consider what is known as 
                 the capacity factor (C). This is defined as the ratio between the actual electricity output of a 
                 source and the maximum possible electricity output over some unit of time.  So for example, if 
@@ -76,22 +76,21 @@
                 of the energy that the capital investment endowed it to). In countries such as the UK, this is seen mainly as 
                 a problem for intermittent power supplies due to erratic behaviour of the weather on which they
                 are so highly dependent. A very rough but simple quantification of this shows us that plant operating
-                with a capacity factor of &Kappa;  will see an increase in the LCOE of a
+                with a capacity factor of &Kappa;  will see an increase in the LCOE of a <figure id="bigfig"><img id="bigimg" src="CapFactor.png" width="100%"></a><figcaption>Figure 3: The capacity factors for various sources. Photovoltaics<br> are not depicted however they range from 20%-30% in most places. Image source: Garzfoth, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons</figcaption></figure>
                 factor &Kappa;<sup>-1</sup>.<br><br>
 
                 <h2 id="titles">Tokamak Economics</h2><div id="text"><br>
-                <h5 id="titles">Add images for the love of god</h5>
                 Let's return to nuclear fusion and the tokamak now. This section will look at the various 
                 parameters that comprise the LCOE from a fusion perspective as well as what is/could be done 
                 to run these costs down in order to make fusion competitive with other baseload power supplies 
                 as soon as possible.    <br>
                 The easiest component of the LCOE to address here is fuel, in which fusion triumphs over 
-                practically all other energy sources, whether they are baseload or intermittent. It is commonly 
+                practically all other baseload energy sources. It is commonly 
                 known that 1kg of fusion fuel (which partly comprises of the abundant hydrogen isotope deuterium, 
                 found in any water source on the planet) has the potential to release the equivalent thermal energy 
                 of millions of kilograms of coal; such elegance and efficiency in the process of energy extraction is one of the reasons that attracted me, and many others I'm sure, to the fusion 
                 industry. Tritium is the other participant in the fusion reaction being targeted here on Earth, so
-                if a self-sustaining tritium breeding blanket is engineered (this is discussed on the blankets page) 
+                if a self-sustaining tritium breeding blanket is engineered (this is discussed on the reactor wall page) 
                 then the fuel costs are almost negligible.<br> 
                 The operation and maintenance costs (denoted by M<sub>t</sub>) should not be too difficult to 
                 estimate due to the similarities with the baseload power stations today. Even though the 
@@ -161,11 +160,7 @@
 		                <td>Provides initial heating to achieve plasma temperature sufficient for self sustaining nuclear fusion.</td>
                         <td>439</td>
 	                </tr>
-                    <tr>
-		                <td>Heating and Current Drive</td>
-		                <td>Provides initial heating to achieve plasma temperature sufficient for self sustaining nuclear fusion.</td>
-                        <td>439</td>
-	                </tr>
+
                     <tr>
 		                <td>Control and Diagnostics</td>
 		                <td>Responsible for monitoring ongoing nuclear fusion reaction</td>
@@ -202,7 +197,7 @@
                 and TCOE of a first generation fusion power plant will be around $110 and $120 
                 respectively. Where do these figures stand in comparison to other electricity generating 
                 sources? Well, of the 7 sources considered (fusion, fission, coal, natural gas, offshore 
-                wind, onshore wind and solar), fusions LCOE places it as 5th cheapest, but its extremely 
+                wind, onshore wind and solar), fusion's LCOE places it as 5th cheapest, but its extremely 
                 low external costs then rank it second cheapest when considering the TCOE (bested only by 
                 current nuclear fission technologies). Considering that this analysis has been undertaken on 
                 perhaps what will be the first commercial fusion power plant, the result above is very promising.<br>
