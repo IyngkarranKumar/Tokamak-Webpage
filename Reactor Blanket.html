@@ -24,7 +24,7 @@
             #customimg1{max-width: 375px; max-height: 375px}
             #bigfig{border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 500px;margin:auto;}
             img{max-width: 220px;max-height: 150px;}
-            #bigimg{max-width: 400px; max-height:300px;}
+            #bigimg{max-width: 500px; max-height:500px;}
             figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
             ol{color:white}
         </style>
@@ -35,23 +35,19 @@
                 <h1 class="masthead-brand">Reactor Blanket</h1>
             </header><br>
             <div id="text">
-                The general impression I got when first looking into a tokamak was: 'the magnets 
-                confine and sustain the fusion reaction, and the reactor blanket does pretty much everything else'. Hopefully
-                this website has shown that this is certainly <i>not</i> the case, but I believe that these
-                initial thoughts were due to the exceptionally wide range of essential functions that the reactor blanket must serve to enable the continuous operation of a tokamak.
-                Indeed, none of the other components that have been or will be introduced must play as many roles as the reactor blanket does, and on this page I aim to introduce a few of the most significant ones. 
-                <br>The reactor blanket is the term used to describe the immediate surrounding structures of the plasma 
-                domain (the region in which the fusing plasma is confined). <br>It must serve <b>four</b> key 
+                The reactor blanket redefines what it means to multitask. With a fair degree of confidence, I can say that it would be quite a task to find a component in any machine that must play as many <b>vital</b> roles as the reactor blanket must, more so if the constraints that it is subjected to are accounted for. 
+                <br>It is comprised of the immediate surrounding structures of the plasma 
+                domain (the region in which the fusing plasma is confined) and must serve <b>four</b> key 
                 functions: 
                 <figure id="bigfig"><img id="bigimg" width=400px height=300px alt="Nuclear Power plant" src="powerplant.jpg"><figcaption>Figure 1: Thermal Power station</figcaption></figure>                    
                 <ol>
                 <li>Protect the magnets (which are just a few metres away from the plasma domain), as well as other surrounding structures and human personnel from electromagnetic radiation and high-energy neutrons.</li>
                 <li>Tritium breeding. A fusion power plant will need to breed its own tritium due to the scarce stores we have here on Earth (Annual production is 20kg. A 500 MW fusion power plant will require ~ 50kg <sup><a href="Citations.html">1</a></sup>). Such a process could potentially take place in the blanket, with ITER set to trial this in the later years of its operation. </li>
-                <li>Recover energy from the emitted radiation and fusion products to eventually be converted to electrical energy. This will be achieved via the conventional methods of a thermal power plant.</li>
+                <li>Recover energy from the emitted radiation and fusion products to eventually be converted to electrical energy. </li>
                 <li>Maintain an impurity-free plasma domain. The first wall of the reactor blanket (as well as the divertor) are the structures that face direct contact with the plasma, and so must be engineered to minimise high Z-number atoms entering the plasma domain, whilst being fashioned from a material that can withstand an extremely high heat flux. </li>
                 </ol>
                 
-                ITER will line the inside of their vessel with 1 x 1.5 metre blanket modules that aim to accomplish all four tasks. Following the order of the list above, we'll begin with how the blanket serves as a shield to other components of the tokamak. <br><br>
+                ITER will line the inside of the vessel containing the tokamak with 1 x 1.5-metre blanket modules that aim to accomplish all four tasks. To keep things fairly concise, we will only quickly mention the shielding and energy extraction properties of the blanket and defer a comprehensive discussion of both to the vacuum vessel page. With that being said, we begin with a consideration of the first wall; which, being the other plasma facing component (PFC) along with the divertor, must be engineered to withstand conditions similar to those directly underneath a rocket during take-off! <br><br>
                 
                 <h2 id="titles" text-align="left" color="white" >Shielding</h2>
                 Let's first delve further into the question of what we are shielding <i>from</i>. You may recall from previous pages that a fusion reaction involves two 
@@ -60,7 +56,7 @@
                 have a higher rest mass than the products, and so conservation of energy dictates that 
                 the neutron and &#593; particle carry 17.6 MeV more kinetic energy than the products, of which 
                 14.1 MeV is held by the neutron, and 3.5 MeV by the &#593;. 
-                <figure id="bigfig"><img id="bigimg" width=100% height=300px alt="A placeholder" src="placeholder.png"><figcaption>Figure 2: The hell you looking at</figcaption></figure>
+                <figure id="bigfig"><img id="bigimg" src="Blanket.png"></a height=100% width=100%><figcaption>Figure 2: Simple depiction of the surrounding structures of the plasma domain. Created with <a href="https://app.biorender.com/">Bio Render</a></figcaption></figure>
                 <br>The presence of the 14.1 MeV neutron is quite a pressing matter, as its interactions with surrounding structures are problematic to say the least.
                 On collision with the reactor walls, the neutron can displace the wall's constituent molecules (a process known as sputtering) which often find a way 
                 back into the plasma (backscattering). The effects of this are discussed in greater detail on the  
@@ -71,9 +67,8 @@
                 reducing the need for replacement parts every few years. Further issues stemming from the 14.1 MeV neutron include the unwanted heating
                 of the superconducting magnets confining the plasma (), <a href="https://en.wikipedia.org/wiki/Neutron_activation" target="blank">neutron activation</a> and exposure of nearby organisms to ionising radiation, amplified by outgoing brehmsstralung and line emission radiation.<br>
                 <br>To combat these problems, a tremendous amount of work has gone into developing effective shielding systems.  
-                With regards to the structure and location of such systems, in practically all machines there exists some shielding 
-                directly behind the first wall (the structure in direct contact with the plasma domain) with auxiliary shielding 
-                modules embedded deeper in the blanket to provide additional protection to the magnets from high energy neutrons and 
+                With regards to the structure and location of such systems, the first wall (the structure in direct contact with the plasma domain) is designed to provide a moderate amount of shielding, with auxiliary shielding 
+                modules embedded deeper in the blanket to provide additional protection to the magnets and living organisms from high energy neutrons and 
                 electromagnetic radiation, depicted in figure 2. Shields have thicknesses in the order of 10<sup>1</sup>cm, but due 
                 to the stringent conditions on dimensions  (imposed with the goal of creating a compact reactor in mind), the real 
                 beauty in these modules is the materials science that has been employed to make them as effective as possible. 
@@ -92,7 +87,15 @@
                 look for more suitable materials to be used to line the inside of a tokamak. 
                 <br>A prime contender for the shielding material to be used inside a tokamak is 
                 a <a href="https://en.wikipedia.org/wiki/Metal_matrix_composite" target="blank_">metal matrix composite </a> containing tungsten carbide/boride 
-                (WC/WB). By embedding WC/WB (the aggregate) in a metal binder, which is likely to be an alloy of iron and chromium, the resultant material is endowed with desirable qualities from both components; we see that the brittle nature of the aggregate is overcome by the ductility of the binder, and the WC particles harden the material further. One may ask why a tungsten <i>carbide/boride</i>  ceramic is used as supposed to a tungsten, iron and chromium-based alloy, but upon learning that carbon is an effective neutron moderator, and boron-10 can absorb neutrons without becoming radioactive, the reason should be clear. To do justice to the breadth of literature that exists covering the topics above, as well as the underlying physics and chemistry, multiple webpages would have to be created; to keep things fairly concise I'll end this section by mentioning that the proposed ceramic metal composites also have lower sputtering ratios than pure tungsten (on average by a factor 4) and a lower coefficient of thermal expansion. 
+                (WC/WB). By embedding WC/WB (the aggregate) in a metal binder, which is likely to be an alloy of iron and chromium, the 
+                resultant material is endowed with desirable qualities from both components; we see that the brittle nature of the aggregate 
+                is overcome by the ductility of the binder, and the WC particles harden the material further. One may ask why a tungsten 
+                <i>carbide/boride</i>  ceramic is used as supposed to a tungsten, iron and chromium-based alloy, but upon learning that 
+                carbon is an effective neutron moderator, and boron-10 can absorb neutrons without becoming radioactive, the reason should 
+                be clear. To do justice to the breadth of literature that exists covering the topics above, as well as the underlying physics 
+                and chemistry, multiple webpages would have to be created; to keep things fairly concise I'll end this section by mentioning 
+                that the proposed ceramic metal composites also have lower sputtering ratios than pure tungsten (on average by a factor 4) 
+                and a lower coefficient of thermal expansion. 
 
                 <br><br><h2 id="titles" text-align="left" color="white" >Tritium Breeding</h2>
                 <list>
