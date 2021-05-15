@@ -25,8 +25,8 @@
             #bigfig{border: thin #c0c0c0 solid;float:right; column;padding: 5px;max-width: 500px;margin:auto;}
             img{max-width: 220px;max-height: 150px;}
             #bigimg{max-width: 500px; max-height:500px;}
-            figcaption {background-color: #222;color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
-            ol{color:white}
+            #figcaption {background-color: rgb(7, 7, 7);color: #fff;font: italic smaller sans-serif;padding: 3px;text-align: center}
+            #ol{color:white}
         </style>
     </head>
     <body>
@@ -39,7 +39,7 @@
                 <br>It is comprised of the immediate surrounding structures of the plasma 
                 domain (the region in which the fusing plasma is confined) and must serve <b>four</b> key 
                 functions: 
-                <figure id="bigfig"><img id="bigimg" width=400px height=300px alt="Nuclear Power plant" src="powerplant.jpg"><figcaption>Figure 1: Thermal Power station</figcaption></figure>                    
+                <figure id="bigfig"><img id="bigimg" width=500px height=300px alt="Depiction of reactor blanket structure" src="Blanket.png"><figcaption>Figure 1: A depiction of the reactor blanket structure</figcaption></figure>                    
                 <ol>
                 <li>Protect the magnets (which are just a few metres away from the plasma domain), as well as other surrounding structures and human personnel from electromagnetic radiation and high-energy neutrons.</li>
                 <li>Tritium breeding. A fusion power plant will need to breed its own tritium due to the scarce stores we have here on Earth (Annual production is 20kg. A 500 MW fusion power plant will require ~ 50kg <sup><a href="Citations.html">1</a></sup>). Such a process could potentially take place in the blanket, with ITER set to trial this in the later years of its operation. </li>
@@ -47,58 +47,100 @@
                 <li>Maintain an impurity-free plasma domain. The first wall of the reactor blanket (as well as the divertor) are the structures that face direct contact with the plasma, and so must be engineered to minimise high Z-number atoms entering the plasma domain, whilst being fashioned from a material that can withstand an extremely high heat flux. </li>
                 </ol>
                 
-                ITER will line the inside of the vessel containing the tokamak with 1 x 1.5-metre blanket modules that aim to accomplish all four tasks. To keep things fairly concise, we will only quickly mention the shielding and energy extraction properties of the blanket and defer a comprehensive discussion of both to the vacuum vessel page. With that being said, we begin with a consideration of the first wall; which, being the other plasma facing component (PFC) along with the divertor, must be engineered to withstand conditions similar to those directly underneath a rocket during take-off! <br><br>
+                ITER will line the inside of the vessel containing the tokamak with 1 x 1.5-metre blanket modules that aim to accomplish all four tasks. 
+                It will be seen in the coming pages that the reactor blanket and <a href="Vacuum Vessel.html">Vacuum Vessel</a> share the roles of shielding and 
+                energy extraction so to keep things fairly concise, we will only quickly mention how the blanket is adapted to such tasks and 
+                defer a more comprehensive discussion of how a tokamak carries out both functions to the vacuum vessel page. With that being said, we begin with a consideration of the 
+                first wall, which being the other plasma facing component (PFC) along with the divertor must be engineered to withstand 
+                conditions similar to those directly underneath a rocket during take-off! <br><br>
                 
-                <h2 id="titles" text-align="left" color="white" >Shielding</h2>
-                Let's first delve further into the question of what we are shielding <i>from</i>. You may recall from previous pages that a fusion reaction involves two 
-                isotopes of hydrogen as reactants (deuterium and tritium), which fuse and form two 
-                products, an alpha (&#593;)  particle and a neutron. The reactants in this process 
-                have a higher rest mass than the products, and so conservation of energy dictates that 
-                the neutron and &#593; particle carry 17.6 MeV more kinetic energy than the products, of which 
-                14.1 MeV is held by the neutron, and 3.5 MeV by the &#593;. 
-                <figure id="bigfig"><img id="bigimg" src="Blanket.png"></a height=100% width=100%><figcaption>Figure 2: Simple depiction of the surrounding structures of the plasma domain. Created with <a href="https://app.biorender.com/">Bio Render</a></figcaption></figure>
-                <br>The presence of the 14.1 MeV neutron is quite a pressing matter, as its interactions with surrounding structures are problematic to say the least.
-                On collision with the reactor walls, the neutron can displace the wall's constituent molecules (a process known as sputtering) which often find a way 
-                back into the plasma (backscattering). The effects of this are discussed in greater detail on the  
-             <a href="Divertors.html">Divertor</a> page, but know that the presence of such impurities is only detrimental to achieving 
-                net power output. The neutron also attacks the strutural integrity of surfaces it is incident upon, with the microscopic 
-                voids left by the sputtered atoms becoming larger over time, leading to cracks and changes in the macroscopic behaviour of 
-                the material. Diffusion of helium and tritium into the material structure further contribute to the degradation of the first wall. Mitigating this effect could save a good deal of money on the operational costs of a fusion power plant, by 
-                reducing the need for replacement parts every few years. Further issues stemming from the 14.1 MeV neutron include the unwanted heating
-                of the superconducting magnets confining the plasma (), <a href="https://en.wikipedia.org/wiki/Neutron_activation" target="blank">neutron activation</a> and exposure of nearby organisms to ionising radiation, amplified by outgoing brehmsstralung and line emission radiation.<br>
-                <br>To combat these problems, a tremendous amount of work has gone into developing effective shielding systems.  
-                With regards to the structure and location of such systems, the first wall (the structure in direct contact with the plasma domain) is designed to provide a moderate amount of shielding, with auxiliary shielding 
-                modules embedded deeper in the blanket to provide additional protection to the magnets and living organisms from high energy neutrons and 
-                electromagnetic radiation, depicted in figure 2. Shields have thicknesses in the order of 10<sup>1</sup>cm, but due 
-                to the stringent conditions on dimensions  (imposed with the goal of creating a compact reactor in mind), the real 
-                beauty in these modules is the materials science that has been employed to make them as effective as possible. 
+                <h2 id="titles" text-align="left" color="white" >Tritium Breeding</h2>
+                <b><i>DT reaction: </i></b>First-generation fusion reactors will aim to deliver a net energy gain via the deuterium-tritium reaction. Whilst the fusion
+                elements with an atomic number less than that of iron is theoretically viable for energy generation, the greatest gains are
+                to be made fusing isotopes of low Z number. Furthermore, the ease at which two isotopes fuse (measured by a quantity known
+                as the sigma V parameter), is greatest for that of deuterium and tritium, providing further incentives to pursue the reaction. 
+                To show this explicitly, in order to achieve a similar power output of a DT reactor operating at 10<sup>8</sup> Kelvin, a DH 
+                (deuterium-helium 3) machine would need to sustain temperatures of 2 orders of magnitude greater. Hence, it should be clear 
+                why (most) efforts are focusing on the DT combination. 
                 <br>
-                Unsurprisingly, Tungsten is a frontrunner in the list of potential shield materials. Its high melting point, low 
-                coefficient of thermal expansion and low chance of neutrons activation make it well suited to the inside of a fusion 
-                reactor, with its resistance to erosion also proving highly desirable. This can be seen if we define the sputtering 
-                ratio, S, as the number of wall atoms back sputtered into the plasma per plasma ion incident on the wall;  from experiment we 
-                find that Tungsten has the lowest sputtering ratio of the compounds found in a fusion reactor across practically all incident energies.
-                <br> There are, of course, shortcomings. A limited temperature range, bounded by what are known as the brittle to 
-                ductile transition temperature (BDTT) and the recrystallization temperature, constrict the range in which a metal can 
-                be used as an effective structural material. In short, the BDTT is the temperature range below which a metal will lose its malleable properties, and in the process will become unsuitable to bear large stresses. The recrystallization temperature (range) can be summarised as follows: when large stresses are applied to a metal, its component crystallites (the microscopic crystals that make up the metal, also known as grains), are deformed, which endow the metal with suitable properties to be used in extreme conditions, such as increased tensile strength and hardness. At and above the recrystallization temperature range, these deformed grains are replaced by a new set of (undistorted) crystallites, making the metal lose such properties and not appropriate to use in say a tokamak. 
-                Unfortunately, the BDTT and the recrystallization temperature for tungsten are relatively close<sup>1, reference</sup>, posing
-                a restriction on its effectiveness as a shielding material. Other factors, involving the extremely high tendency for tungsten 
-                to oxidize at high temperatures as well as the difficulty in manipulating the shape of forged tungsten provide incentives to 
-                look for more suitable materials to be used to line the inside of a tokamak. 
-                <br>A prime contender for the shielding material to be used inside a tokamak is 
-                a <a href="https://en.wikipedia.org/wiki/Metal_matrix_composite" target="blank_">metal matrix composite </a> containing tungsten carbide/boride 
-                (WC/WB). By embedding WC/WB (the aggregate) in a metal binder, which is likely to be an alloy of iron and chromium, the 
-                resultant material is endowed with desirable qualities from both components; we see that the brittle nature of the aggregate 
-                is overcome by the ductility of the binder, and the WC particles harden the material further. One may ask why a tungsten 
-                <i>carbide/boride</i>  ceramic is used as supposed to a tungsten, iron and chromium-based alloy, but upon learning that 
-                carbon is an effective neutron moderator, and boron-10 can absorb neutrons without becoming radioactive, the reason should 
-                be clear. To do justice to the breadth of literature that exists covering the topics above, as well as the underlying physics 
-                and chemistry, multiple webpages would have to be created; to keep things fairly concise I'll end this section by mentioning 
-                that the proposed ceramic metal composites also have lower sputtering ratios than pure tungsten (on average by a factor 4) 
-                and a lower coefficient of thermal expansion. 
-
-                <br><br><h2 id="titles" text-align="left" color="white" >Tritium Breeding</h2>
-                <list>
-                    <ul>Graph of n/Li7 cross section vs temperature?</ul>
-                </list>
+                The good news is that it would be awfully hard to run out of deuterium. In fact, if we were to be running short, there would be 
+                bigger problems to worry about than the operation of a fusion reactor, given that it makes up about 0.01% of the mass 
+                of all water on earth. This may not sound significant, but our planet is not known for its water scarcity and harbours 
+                10<sup>18</sup> kilograms of H<sub>2</sub>0. Deuterium is a stable isotope of hydrogen too, so apart from some preprocessing prior to insertion into the reactor, deuterium causes 
+                very few problems to those developing fusion reactors. The same however cannot be said for tritium...<br>
+                <b><i>Tritium: </i></b>The heaviest known naturally occurring isotope of hydrogen is one that mainly features in our society 
+                today as a way to create luminescent lights, but will hopefully provide our planet with energy in abundance in the near future. 
+                Before that, however, there are some challenges to overcome which result from the permeability and radioactivity of tritium. A few key bits of information first: tritium as we said is not naturally stable 
+                and has a decay constant of 1.8x10<sup>-9</sup> seconds, which translates to a half-life of approximately 12 years. Triton (the name given to the nucleus of tritium)
+                is a beta emitter, so the products of the decay are an electron (with an average energy of 5 eV) and a helium 3 nucleus. The 
+                relatively short half-life of tritium ensures that stores on earth remain at around 20 kilograms, found mainly in the oceans 
+                and produced in the atmosphere via interactions of nitrogen molecules with cosmic radiation. <br>
+                <figure  id="bigfig"><img id="bigimg" alt="Lithium total cross section" src="LithiumCS.png" width="400" height="300px"><figcaption>Figure 2: Total cross section<br>of Li-6, Li-7 and F-19 as a function of neutron energy </figcaption></figure>
+                <b><i>Breeding: </i></b>So how will the kilogram quantities required for the continuous operation of a DT reactor be produced? 
+                It turns out that we already breed tritium in some fission-based power plants, occuring when a neutron is captured by the 
+                heavy water that serves to cool the reactor and moderate the energetic neutrons produced. In most designs for fusion power 
+                plants however, the method of choice is that of the interaction of a neutron with lithium; the reactions of interest are 
+                presented below, as well as the total reaction cross sections <br> as a function of incident neutron energy (Technically we are interested in 
+                the capture cross section but both graphs display similar features, albeit with slightly different values on the y axis, and finding a graph with capture cross section was hard.): <br><br>
+                <center><i>n + <sup>6</sup>Li &rarr; &alpha; + t</i> <br></center>
+                <center><i>n + <sup>7</sup>Li &rarr; n + &alpha; + t</i></center><br>
+                The position of the breeding layer in the blanket is sensibly chosen to be directly behind the first wall in order to maximise 
+                tritium output. Referring to Figure 2, we see that the total cross section has a global maximum for the lowest allowed neutron 
+                energy but a local maximum at ~0.244 MeV (due to neutron/nucleus resonance), hence the first wall aims to reduce neutron energy 
+                to roughly this value. Embedding the breeding layer further back may slow the neutrons down to energies in the range of 
+                10<sup>-3</sup> to 10<sup>-1</sup> MeV, which as can be seen in the graph above is not optimal for tritium production. Finally, 
+                the bred tritium will need to be extracted from the blanket via an active transport process, and then fed back into the reactor, either as 
+                a gas or in pellet form. 
+                
+                <br><br>
+                <b><i>Issues and Solutions</i></b>:
+                One way to appreciate the difficulty in containing tritium, and other hydrogen isotopes for that matter, is to liken 
+                it to trying to keep sand out of shoes on a trip to the beach. It gets everywhere. The story is no different in a fusion 
+                reactor (with regards to tritium, not sand) and a key challenge to be overcome in the coming years of fusion research is 
+                to minimise the loss of tritium through reactor components via various transport processes. 
+                <br>As with practically all radioactive substances, the release of tritium into the external environment is not desirable. 
+                Tritium easily reacts with oxygen to form tritiated water, which can contaminate local groundwater sources; this can 
+                then go on to lead to adverse health effects in the surrounding populations due to the high activity and the moderately 
+                ionising beta particle that are products of the decay. <br>
+                There are some key parameters unique to each structural material that are used to determine the rate at which 
+                tritium will be transported through it, such as diffusivity (the tendency for tritium atoms to move through the material), 
+                solubility (the tendency for tritium to exist as a diatomic molecule as supposed to a singular atom in the material), 
+                trapping coefficient(the tendency for tritium to bond to various features of the microstructure of the metal such as  
+                <a href="Vacancy defect - Wikipedia" target="_blank">vacancies/voids</a>) and many others which I will not name but can 
+                be found in a very detailed overview of the topic 
+                <a href="Tritium Barriers and Tritium Diffusion in Fusion Reactors (northwestern.edu)" target="_blank">here</a>. The 
+                search for/development of a material with desirable values for the parameters above (and the others not mentioned) is a 
+                very active area of research and to date no 'super material' has been found that satisfies all required properties. 
+                Current materials under consideration are carbon, tungsten or beryllium for plasma facing components (these will be 
+                discussed in greater detail in the First Wall section), austenitic and ferritic steels, alloys of zirconium,aluminium and 
+                vanadium as well as various ceramics for structural layers surrounding the reactor and metal oxides, nitrides and 
+                carbides for the barrier, which is a thin layer of material with <b>very</b> low propensity for tritium transport, solely designed to 
+                prevent tritium losses. 
+                All materials above have some desirable properties with regards to the issues mentioned above, but unfortunately compromise
+                elsewhere; for example, the oxides, nitrides and carbides provide low tritium diffusivity but buckle under intense 
+                neutron/thermal exposure, whereas for some metals the story is reversed. The relentless pursuit of materials that 
+                perform adequately under such conditions is a challenging but exciting one, and will certainly lead to revolutionary 
+                advancements in a wide range of fields, not just nuclear engineering! 
+                <br>
+                <b><i>Neutron Multiplication:</i></b> In the final part of this section, we'll quickly take a look at one more 
+                feature that the blanket will require if it is to breed tritium. Referring to the tritium breeding reactions above, 
+                we note that capture of a neutron by <sup>7</sup>Li yields another neutron, whereas <sup>6</sup>Li reactions do not. 
+                The number of neutrons that a reaction produces is termed the neutron multiplication ratio (let this be 
+                denoted &chi;<sub>n</sub>; &chi;<sub>n</sub> = 1 for <sup>7</sup>Li reaction, 0 for the <sup>6</sup>Li reaction), and to maintain a constant power output we need this multiplication ratio in the blanket 
+                to be greater than one. Why is this the case? Our aim is to achieve a fixed number of fusion reactions per second, say K 
+                reactions per second are needed for the power output required. These K fusions produce K neutrons from K tritons 
+                (and deuterons), but due to the fact that not all these neutrons will be captured in the tritium breeding layer 
+                (some will be absorped by surrounding materials, others will undergo collisions instead etc), on passing through 
+                the breeding layer we obtain Kx  tritium atoms, with x being the fraction of neutrons that undergo a capture reaction 
+                with a lithium atom (x < 1), so Kx < K. Upon re-insertion to the plasma domain, these will allow for Kx fusions at most. 
+                Hence, we must multiply the number of neutrons that are emitted from the plasma, or else over numerous fusion/breeding 
+                cycles, the number of tritons being reinserted to the reactor will fall exponentially; conventional methods to achieve 
+                such a task are through the insertion of another element with &chi;<sub>n</sub> > 1 . For high energy neutrons 
+                (E>1.9MeV <a href="Citations.html">wikipedia note</a>) the following reaction has &chi;<sub>n</sub> > 2: <br>
+                <center> <i>n + <sup>9</sup>Be &rarr; 2 <sup>4</sup><sub>2</sub>He + 2n</i></center><br>
+                The capture of a neutron by beryllium ensures that there is no tritium drain (given x > 0.5), and indeed ITER will use first walls fashioned 
+                from beryllium partly to test the validity of this process.
             </div>
+
+
+            <br><h2 id="titles" text-align="left" color="white" >First Wall</h2>
